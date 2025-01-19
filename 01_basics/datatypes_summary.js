@@ -31,3 +31,32 @@ console.log(typeof heros);
 console.log(typeof anotherId); 
 
 // https://262.emca-international.org/5.1/#sec-11.4.3
+
+
+// **********************************************
+// Stack (Primitive) , Heap(Non-Primitive) 
+
+/* 
+//Pass by value
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername)
+*/
+
+/* 
+//Pass by reference
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@goole.com"
+console.log(userOne.email);
+console.log(userTwo.email); 
+*/
