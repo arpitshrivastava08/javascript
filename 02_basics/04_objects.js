@@ -1,3 +1,4 @@
+/*
 // const tinderUser = new Object()
 const tinderUser = {}
 
@@ -64,3 +65,47 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser)); 
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+*/
+
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course
+// if we want to change a name then {courseInstructor : Instructor}
+// then use Instructor
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor); 
+console.log(instructor);
+
+
+/*
+// in react we use props. so instead this use {}
+// const navbar = (props.company) => {
+// }
+// so use
+// const navbar = ({company}) => {
+// }
+// navbar(company = "hitesh")
+*/
+
+
+// JASON
+// in this no name and all key is in string so write " "
+// {
+//     "name" : "hitesh",
+//     "coursename" : "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
