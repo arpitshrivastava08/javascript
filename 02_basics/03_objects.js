@@ -18,12 +18,15 @@ const JsUser = {
 }
 // these all name age is accessed through string bydefault in defining not using " " but for accesssing it use " "
 
+/*
 console.log(JsUser.email)  // not appropriate way 
 console.log(JsUser["email"])
 
 // console.log(JsUser.full name)  // we cannot access it 
 // console.log(JsUser."full name")  // error can't access it 
 console.log(JsUser["full name"])   // Right format 
+*/
+
 
 /*
 console.log(JsUser.mySym)  // we use the symbol inside object 
@@ -32,11 +35,24 @@ console.log(typeof(JsUser.mySym))   // not a symbol it is a string
 // then use [] in Object; 
 */
 
-console.log(JsUser[mySym])
-console.log(typeof(JsUser.mySym))
+// console.log(JsUser[mySym])
+// console.log(typeof(JsUser.mySym))
 
 JsUser.email = "hitesh@chatgpt.com"
 // if we want that someother cannot change the value of this then use freeze
-Object.freeze(JsUser)
+// Object.freeze(JsUser)
 JsUser.email = "hitesh@microsoft.com"  // now it is not changed 
-console.log(JsUser); 
+// console.log(JsUser); 
+
+JsUser.greeting = function() {
+    console.log("Helloj JS user");
+}
+
+console.log(JsUser.greeting);  // [Function (anonymous)]
+console.log(JsUser.greeting());  // Helloj JS user  // undefined
+
+JsUser.greetingTwo = function() {
+    console.log(`Helloj JS user, ${this.name}`);
+}
+
+console.log(JsUser.greetingTwo());   // Helloj Js user, Hitesh
