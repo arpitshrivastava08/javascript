@@ -32,6 +32,20 @@ console.log(typeof anotherId);
 
 // https://262.emca-international.org/5.1/#sec-11.4.3
 
+// 1)Primitive datatype
+// a)Number=>number
+// b)String=>string
+// c)Boolean=>boolean
+// d)Symbol=>symbol
+// e)Bigint=>bigint
+// f)Null=>object
+// g)Undefined=>undefined
+
+// 2)Non-Primitive (reference)
+// a)Function=>function object
+// b)Object(key value pair)=>object
+// c)Array=>object
+
 
 // **********************************************
 // Stack (Primitive) , Heap(Non-Primitive) 
