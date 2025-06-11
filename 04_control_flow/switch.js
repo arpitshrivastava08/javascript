@@ -52,3 +52,5 @@ switch (month) {
         console.log("default case match"); 
         break; 
 }
+
+// agar break keyword use nhi kare to sare uske baad wale execute ho jaenge jaha match hoga lekin default case run nhi hoga 

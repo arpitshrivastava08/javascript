@@ -12,7 +12,7 @@ const isUserLoggedIn = true;
 if(isUserLoggedIn){
 }
 
-// <, >, <=, >=, ==, !=, ===
+// <, >, <=, >=, ==, !=, ===, !==
 if( 2 == "2") {
     console.log("exexuted"); 
 } // exexuted
